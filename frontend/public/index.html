@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SimpleSwap</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.15.0/dist/ethers.umd.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">SimpleSwap</h1>
+    <p class="subtitle">by Nahuel Ruiz Mattar</p>
+
+    <button id="connectButton" class="button primary">Connect Wallet</button>
+    <p id="walletAddress" class="status">Not connected</p>
+
+    <div class="form-group">
+      <label for="amountIn">Amount to exchange</label>
+      <input type="number" id="amountIn" placeholder="Ex: 1.0 (decimal format)" />
+    </div>
+
+    <div class="form-group">
+      <label for="amountOutMin">Minimum amount to receive</label>
+      <input type="number" id="amountOutMin" placeholder="Ex: 0.9 (decimal format)" />
+    </div>
+
+    <div class="swap-buttons">
+      <button id="swapThurisazToUruz" class="button secondary">Swap Thurisaz → Uruz</button>
+      <button id="swapUruzToThurisaz" class="button secondary">Swap Uruz → Thurisaz</button>
+    </div>
+
+    <div class="price-buttons">
+      <button id="priceThurisazInUruz" class="button outline">Price of 1 Thurisaz in Uruz</button>
+      <button id="priceUruzInThurisaz" class="button outline">Price of 1 Uruz in Thurisaz</button>
+    </div>
+
+    <p id="priceResult" class="price">Price not available</p>
+  </div>
+
+
+  <div class="swap-history">
+    <h2>Swap History</h2>
+    <table id="historyTable">
+      <thead>
+        <tr>
+          <th>Date and Time</th>
+          <th>Token Input</th>
+          <th>Token Output</th>
+          <th>Input Balance Before</th>
+          <th>Output Balance Before</th>
+          <th>Input Balance After</th>
+          <th>Output Balance After</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="../src/js/main.js"></script>
+</body>
+
+</html>
