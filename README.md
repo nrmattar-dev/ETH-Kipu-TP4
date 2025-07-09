@@ -14,33 +14,6 @@ SimpleSwap is a decentralized application (DApp) that allows users to exchange t
 - **Swap History**: View a detailed record of your exchange transactions, including balances before and after the swap.
 - **Intuitive User Interface**: A clean and easy-to-use design for a smooth user experience.
 
-## Project Structure
-
-The repository is organized as follows:
-.
-├── contracts/
-│ ├── SimpleSwap.sol # Main exchange contract
-│ ├── Thurisaz.sol # Thurisaz token contract (example)
-│ └── Uruz.sol # Uruz token contract (example)
-├── frontend/
-│ ├── public/
-│ │ └── index.html # Main HTML file for the user interface
-│ ├── src/
-│ │ ├── css/
-│ │ │ └── style.css # Application CSS styles
-│ │ └── js/
-│ │ └── main.js # Frontend JavaScript logic
-│ └── package.json # Node.js dependencies for the frontend (if applicable)
-├── ignition/ # Hardhat Ignition deployment scripts
-├── node_modules/ # Node.js dependencies
-├── test/ # Smart contract tests
-├── .env # Environment variables
-├── .gitignore # Files and folders to be ignored by Git
-├── hardhat.config.js # Hardhat configuration
-├── package.json # Node.js dependencies for the overall project (Hardhat, etc.)
-├── package-lock.json # Dependency version lock
-└── README.md # This file
-
 ## Technologies Used
 
 **Frontend:**
